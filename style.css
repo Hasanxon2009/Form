@@ -1,13 +1,24 @@
-@import url(https://fonts.googleapis.com/css2?family=Kalam:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@100;200;300;400;500;600;700&display=swap);
 
 body {
-  font-family: "Kalam", handwriting;
+  font-family: "Rajdhani", sans-serif;
 }
 body {
-  background: url(./img/bg.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(144, 168, 255) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 * {
   margin: 0;
@@ -15,38 +26,11 @@ body {
   list-style: none;
   box-sizing: border-box;
 }
-.form {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.container {
+  box-shadow: 4px 0px 30px 2px rgba(134, 134, 134, 0.28);
+  padding: 15px 25px;
+  transition: all 0.5s;
 }
-h2 {
-  padding-bottom: 20px;
-  font-size: 36px;
-}
-button {
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 15px;
-  border: none;
-  border-radius: 7px;
-  transition: 0.4s;
-  background-color: rgb(179, 216, 248);
-}
-button:hover {
-  background-color: rgb(243, 184, 193);
-}
-#form-text {
-  padding: 7px;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-}
-.message {
-  position: fixed;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.container:hover {
+  box-shadow: 4px 12px 30px 12px rgb(132, 251, 126);
 }
